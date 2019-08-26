@@ -1,6 +1,6 @@
 export const creatNote = (title, body) => {
   return fetch('http://localhost:7891/api/v1/notes', {
-    methos: 'POST',
+    method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
