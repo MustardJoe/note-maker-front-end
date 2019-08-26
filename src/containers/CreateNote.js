@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DisplayForm from '../components/notes/NoteForm';
+import NoteForm from '../components/notes/NoteForm';
 import { createNote } from '../services/notesApi';
 
 export default class CreateNote extends Component{
@@ -28,7 +28,7 @@ export default class CreateNote extends Component{
   render() {
     const { title, body } = this.state;
     return (
-      <DisplayForm
+      <NoteForm
         title={title}
         handleTitleChange={this.handleTitleChange}
         body={body}
